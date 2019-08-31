@@ -32,7 +32,7 @@ x0 = np.zeros(d)
 mus_mh = np.zeros((numOfSim,d))
 
 # Rao-Blackwell MP-MCQMC
-N = 512          # number of proposals
+N = 32          # number of proposals
 PowerOfTwo = 15  # 2**PowerOfTwo = n_mh for comparison
 Stream = 'cud'
 mus_rb = np.zeros((numOfSim,d))
