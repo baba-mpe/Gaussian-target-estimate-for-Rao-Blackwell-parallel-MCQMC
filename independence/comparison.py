@@ -19,7 +19,7 @@ from rao_blackwell_mp_mcqmc import rb_mp_mcqmc
 d=10 # dimension
 mu_target = np.zeros(d)         # target mean
 Sigma_target = np.identity(d)   # target covariance
-numOfSim = 500           # number of simulations
+numOfSim = 100           # number of simulations
 
 print ("Dimension = ", d)
 print ("Number of simulations = ", numOfSim)
