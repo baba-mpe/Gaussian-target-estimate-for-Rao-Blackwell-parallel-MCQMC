@@ -19,15 +19,15 @@ from rao_blackwell_mp_mcqmc import rb_mp_mcqmc
 d=10 # dimension
 mu_target = np.zeros(d)         # target mean
 Sigma_target = np.identity(d)   # target covariance
-numOfSim = 500           # number of simulations
+numOfSim = 50           # number of simulations
 
 print ("Dimension = ", d)
 print ("Number of simulations = ", numOfSim)
 
 # Metropolis-Hastings
 n_mh = 32768           # number of samples
-stepSize = 2.1 # RW: 1.7(d=5); 1.5(d=6); 1.35(d=7); 1.25(d=8); 1.15 (d=9); 1.05(d=10)
-                # Independence: 2.3 (d=5); 2.1 (d=6); 1.95 (d=7); 1.85 (d=8); 2. (d=9); 2.1(d=10)
+stepSize = 1.05 # RW: 1.7(d=5); 1.5(d=6); 1.35(d=7); 1.25(d=8); 1.15 (d=9); 1.05(d=10)
+                # Independence: 2.3 (d=5); 2.1 (d=6); 1.95 (d=7); 1.85 (d=8); 2. (d=9); 2.05 (d=10)
 x0 = np.zeros(d)
 mus_mh = np.zeros((numOfSim,d))
 
